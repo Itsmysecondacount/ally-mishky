@@ -1,8 +1,11 @@
 import './Footer.scss';
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { AiFillInstagram } from 'react-icons/ai';
 
-function Footer() {
+function Footer({ tipeBody }) {
 	return (
-		<footer>
+		<footer className={`${!tipeBody && 'footer-mishky'}`}>
 			<nav>
 				<ul>
 					<li>
@@ -21,13 +24,13 @@ function Footer() {
 			</nav>
 			<div className="social-media">
 				<a href="#">
-					<i className="fab fa-facebook"></i>
+					<BsFacebook color={`${!!tipeBody ? '#ee4c90' : '#f3b52e'}`} />
 				</a>
 				<a href="#">
-					<i className="fab fa-twitter"></i>
+					<AiFillTwitterCircle color={`${!!tipeBody ? '#ee4c90' : '#f3b52e'}`} />
 				</a>
 				<a href="#">
-					<i className="fab fa-instagram"></i>
+					<AiFillInstagram color={`${!!tipeBody ? '#ee4c90' : '#f3b52e'}`} />
 				</a>
 			</div>
 			<p>&copy; 2023 Ally mishky. Todos los derechos reservados.</p>

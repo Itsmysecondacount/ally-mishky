@@ -1,13 +1,13 @@
 import React from 'react';
-import mainImage from '../assets/Pukahaya.png';
-import './Body.scss';
+import mainImage from '../assets/mishkyhaya.png';
+import './SecondBody.scss';
 
-function Body() {
+function SecondBody() {
 	return (
-		<section className="first-section">
+		<section className="second-section">
 			<div className="izquierda-imagen">
-				<h2>Pukahaya</h2>
-				<h3>Mermelada a base de pitahaya roja y cushuro</h3>
+				<h2>Mishkyhaya</h2>
+				<h3>Mermelada a base de pitahaya amarilla y cushuro</h3>
 				<p>
 					La pukahaya es una deliciosa y exótica mermelada elaborada con la pulpa dulce y
 					jugosa de la pitahaya. Esta fruta de tonos rosados y amarillos deslumbra con su
@@ -29,4 +29,4 @@ function Body() {
 	);
 }
 
-export default Body;
+export default SecondBody;

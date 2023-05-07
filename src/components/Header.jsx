@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from '../assets/aya mishky.png';
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ tipeBody }) => {
 	return (
-		<header>
-			<img src={logo} alt="Logo de la empresa" />
+		<header className={`${!tipeBody && 'header-mishky'}`}>
+			<h1>ALLY MISHKY</h1>
 			<nav>
 				<ul>
 					<li>
